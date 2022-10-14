@@ -1,0 +1,17 @@
+list1 = []
+list2 = []
+
+x = int(input("Masukkan panjang list 1: "))
+
+for i in range(0, x):
+    nilai1 = int(input("Masukkan isi dari list 1: "))
+    list1.append(nilai1)
+
+y = int(input("Masukkan panjang list 2: "))
+
+for i in range(0, y):
+    nilai2 = int(input("Masukkan isi dari list 2: "))
+    list2.append(nilai2)
+
+duplicate = set(list1) & set(list2)
+print("Nilai yang sama:", duplicate)
